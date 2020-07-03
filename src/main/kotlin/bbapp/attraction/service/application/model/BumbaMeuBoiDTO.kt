@@ -1,4 +1,4 @@
-package bbapp.atracao.service.application.model
+package bbapp.attraction.service.application.model
 
 import java.util.UUID
 

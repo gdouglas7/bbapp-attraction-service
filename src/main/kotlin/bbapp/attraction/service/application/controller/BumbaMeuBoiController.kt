@@ -1,7 +1,7 @@
-package bbapp.atracao.service.application.controller
+package bbapp.attraction.service.application.controller
 
-import bbapp.atracao.service.application.model.BumbaMeuBoiDTO
-import bbapp.atracao.service.domain.BumbaMeuBoiService
+import bbapp.attraction.service.application.model.BumbaMeuBoiDTO
+import bbapp.attraction.service.domain.BumbaMeuBoiService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController
 class BumbaMeuBoiController(private val bumbaMeuBoiService : BumbaMeuBoiService) {
 
     @GetMapping("/{bumbaMeuBoiId}")
-    fun getBumbaMeuBoi(@PathVariable("bumbaMeuBoiId") bumbaMeuBoiId: String): BumbaMeuBoiDTO{
+    fun getBumbaMeuBoi(@PathVariable("bumbaMeuBoiId") bumbaMeuBoiId: String): BumbaMeuBoiDTO {
         return bumbaMeuBoiService.getBumbaMeuBoiById(bumbaMeuBoiId)
     }
 

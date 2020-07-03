@@ -1,11 +1,11 @@
-package bbapp.atracao.service
+package bbapp.attraction.service
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class BbappAtracaoServiceApplication
+class BbappAttractionServiceApplication
 
 fun main(args: Array<String>) {
-	runApplication<BbappAtracaoServiceApplication>(*args)
+	runApplication<BbappAttractionServiceApplication>(*args)
 }

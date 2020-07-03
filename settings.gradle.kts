@@ -1,1 +1,1 @@
-rootProject.name = "bbapp-atracao-service"
+rootProject.name = "bbapp-attraction-service"

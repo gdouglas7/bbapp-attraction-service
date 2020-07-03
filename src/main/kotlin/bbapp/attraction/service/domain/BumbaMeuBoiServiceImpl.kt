@@ -1,6 +1,6 @@
-package bbapp.atracao.service.domain
+package bbapp.attraction.service.domain
 
-import bbapp.atracao.service.application.model.BumbaMeuBoiDTO
+import bbapp.attraction.service.application.model.BumbaMeuBoiDTO
 import org.springframework.stereotype.Service
 
 @Service
