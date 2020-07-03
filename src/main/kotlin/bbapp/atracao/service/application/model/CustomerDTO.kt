@@ -2,8 +2,7 @@ package bbapp.atracao.service.application.model
 
 import java.util.UUID
 
-data class BumbaMeuBoiDTO(
+data class CustomerDTO(
         val id: String = UUID.randomUUID().toString(),
-        val name: String,
-        val accent: String
+        val name: String
 )

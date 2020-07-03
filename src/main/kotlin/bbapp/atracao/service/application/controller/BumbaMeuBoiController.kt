@@ -4,9 +4,11 @@ import bbapp.atracao.service.application.model.BumbaMeuBoiDTO
 import bbapp.atracao.service.domain.BumbaMeuBoiService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
-@RestController("/api/v1/bumba-meu-boi")
+@RequestMapping("/api/v1/bumba-meu-boi")
+@RestController
 class BumbaMeuBoiController(private val bumbaMeuBoiService : BumbaMeuBoiService) {
 
     @GetMapping("/{bumbaMeuBoiId}")

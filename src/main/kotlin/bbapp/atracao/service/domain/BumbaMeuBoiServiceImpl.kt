@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service
 @Service
 class BumbaMeuBoiServiceImpl : BumbaMeuBoiService {
     override fun getBumbaMeuBoiById(bumbaMeuBoiId: String): BumbaMeuBoiDTO {
-        return BumbaMeuBoiDTO(id = bumbaMeuBoiId, nome = "Boi de Santa Fé", sotaque = "Baixada")
+        return BumbaMeuBoiDTO(id = bumbaMeuBoiId, name = "Boi de Santa Fé", accent = "Baixada")
     }
 }
