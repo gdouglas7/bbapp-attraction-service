@@ -24,7 +24,8 @@ class RestExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException::class)
     fun validationErrorHandling(ex: MethodArgumentNotValidException): ResponseEntity<Any> {
-        val errors = "${ex.parameter} : ${ex.message}"
-        return ResponseEntity(errors, HttpStatus.BAD_REQUEST)
+        return ResponseEntity(Response(result = ex.message), HttpStatus.BAD_REQUEST)
     }
 }
+
+data class Response(val result: String)
